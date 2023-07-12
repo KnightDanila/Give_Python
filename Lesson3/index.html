@@ -150,9 +150,10 @@ int main() {
     char str[100] = "";
     cout << "Here is a Parrot, say something: ";
     cin >> str;
-    while (strcmp(str, "bye") != 0 && strcmp(str, "Bye") != 0 && 
-           strcmp(str, "goodbye") != 0 && strcmp(str, "Goodbye") != 0)
-    {
+    // strcmp = 0 - performs a case-sensitive comparison of two strings.
+    // stricmp = 0 - performs a non case-sensitive comparison of two strings.
+    while (_stricmp(str, "bye") != 0 && 
+           _stricmp(str, "goodbye") != 0) {
         cout << "- Parrot: " << str << endl;
         cout << "- You: ";
         cin >> str;
