@@ -1,0 +1,9 @@
+# Создаем словарь capital_city
+variable = 5 # 2134-123123-12312-123-
+
+capital_city = {'Ukraine': 'Kyiv', 'Spain': 'Madrid', variable: 'Tokio'}
+
+print(capital_city)
+print(capital_city['Ukraine'])
+print(capital_city[variable])
+print(id(variable))

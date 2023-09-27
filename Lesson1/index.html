@@ -288,6 +288,8 @@ and open the template in the editor.
                     <section>
                         <h3>Format IO - Input\Output</h3>
                         C++
+                        <br>
+                        (work only with ISO C++ 20 (/std:c++20))
                         <pre class="cpp" style="white-space: pre-line;">
                         <code>#include &lt;format>
                         #include &lt;iomanip>
@@ -304,8 +306,8 @@ and open the template in the editor.
                         <code>
                             text1 = "Flawless"
                             text2 = "Supercalifragilisticexpialidocious"
-                            print(text1 + "and" + text2)
-                            print(text1, "and", text2) // C++ << ... << ... <<
+                            print(text1 + " and " + text2)
+                            print(text1, "and", text2) # C++ << ... << ... <<
                             print('{1} and {0}'.format(text1, text2)) # C#
                             print(f 'Some text: {text1} {text2}') # Shell
                             
