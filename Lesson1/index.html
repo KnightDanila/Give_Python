@@ -72,6 +72,20 @@ and open the template in the editor.
                         <h3>Basic Data Types</h3>
                         <img src="data/data_types_in_cpp.jpg" alt="" class="stretch plain"/>
                     </section>
+                    <section data-background-image="data/MysticHorizon.jpg">
+                        <h3>
+                            In the beginning was the ****
+                        </h3>
+                    </section>
+                    <section data-background-image="data/MysticHorizon.jpg">
+                        <h3>
+                            In the beginning was the <mark>Word</mark>
+                            <br>
+                            - Bible
+                        </h3>
+                    </section>
+
+
                     <section>
                         <h4>In the beginning - people started to speak.</h4>
                         <img src="data/flintstone_Speaking.gif" alt="" class="stretch plain"/>
@@ -163,12 +177,12 @@ and open the template in the editor.
                         Python
                         <pre class="cpp" style="white-space: pre-line;"><code>
                             import sys
-                            int x = 5;
-                            sys.getsizeof(x)
+                            x = int(5);
+                            print(sys.getsizeof(x))
                             # 28 bytes
-                            sys.getsizeof('this')
+                            print(sys.getsizeof('this'))
                             # 38
-                            sys.getsizeof('this also')
+                            print(sys.getsizeof('this also'))
                             # 48
                         </code></pre>
                     </section>
@@ -202,16 +216,16 @@ and open the template in the editor.
 
                 <section>
                     C++
-                    <pre class="cpp" style="white-space: pre-line;"><code>
-                        #include &lt;typeinfo>
+                    <pre class="cpp" style="white-space: pre-line;">
+                        <code>#include &lt;typeinfo>
                         //...    
                         cout << "typeid(100).name() = " << typeid(100).name() << endl;
                         cout << "typeid(string).name() = " << typeid("string").name() << endl;
                         cout << "typeid('A').name() = " << typeid('A').name() << endl;
                         </code></pre>
                     C#
-                    <pre class="cpp" style="white-space: pre-line;"><code>
-                        int number = 5;
+                    <pre class="cpp" style="white-space: pre-line;">
+                        <code>int number = 5;
                         Console.WriteLine(number.GetType());
                         string str = "Hello World!";
                         Console.WriteLine(str.GetType());
@@ -221,20 +235,99 @@ and open the template in the editor.
 
 
                     Python
-                    <pre class="cpp" style="white-space: pre-line;"><code>
-                        print(type('string'))   # &lt;class 'str'>
+                    <pre class="cpp" style="white-space: pre-line;">
+                        <code>print(type('string'))   # &lt;class 'str'>
                         print(type(100))        # &lt;class 'int'>
                         print(type([0, 1, 2]))  # &lt;class 'list'>
                         </code></pre>
                 </section>
                 <section>
-                    <section data-state="BirdAI">
-                        htmlTest
+                    <section>
+                        <h3>What next after data types?</h3>
+                        <img src="data/Terminal_Screen_Console_giphy.gif" alt="" class="stretch plain"/>
+                        
+                    </section>
+                    <section>
+                        <h3>Base IO - Input\Output</h3>
+                        Terminal vs Console - difference???
+                        <img src="data/Terminator_Vision.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Base IO - Input\Output</h3>
+                        C++
+                        <pre class="cpp" style="white-space: pre-line;">
+                        <code>std::cout << "Enter something: ";
+                            //...
+                            char input[100];
+                            cin >> input;
+                            cout << input << end;
+                            //
+                            char input[100];
+                            cin.getline(input,sizeof(input));
+                            cout << input << end;
+                            //
+                            std::string input;
+                            std::getline(std::cin, input);
+                            cout << input << end;
+                        </code></pre>
+
+                    </section>
+
+                    <section>
+                        <h3>Base IO - Input\Output</h3>
+                        Python
+                        <pre class="cpp" style="white-space: pre-line;">
+                        <code>input=input('Enter a something: ')
+                            print('You Entered:', input)
+                            print('Data type of input', type(input))
+                            // number++                            
+                        </code></pre>
+
+                    </section>
+
+                    <section>
+                        <h3>Format IO - Input\Output</h3>
+                        C++
+                        <pre class="cpp" style="white-space: pre-line;">
+                        <code>#include &lt;format>
+                        #include &lt;iomanip>
+                            
+                        std::cout << std::format("name = {:.7}.", "Smith Will"); 
+                        </code></pre>
+
+                    </section>
+
+                    <section>
+                        <h3>Format IO - Input\Output</h3>
+                        Python
+                        <pre class="python" style="white-space: pre-line;">
+                        <code>
+                            text1 = "Flawless"
+                            text2 = "Supercalifragilisticexpialidocious"
+                            print(text1 + "and" + text2)
+                            print(text1, "and", text2) // C++ << ... << ... <<
+                            print('{1} and {0}'.format(text1, text2)) # C#
+                            print(f 'Some text: {text1} {text2}') # Shell
+                            
+                            print("Decimal(int) : %2d, Portal : %5.2f" % (1, 05.333)) # C printf("%X", ...);
+                            print("Total students : %3d, Boys : %2d, Girls : %2d" % (240, 120, 120))   # print integer value
+                            print("%7.3o" % (25))   # print octal value
+                            print("%10.3E" % (356.08977))   # print exponential value
+                        </code></pre>
                     </section>
                 </section>
                 <section>
                     <h3>Links: </h3>
+
+                    Python:
                     <ul>
+                        <li><a href="https://ravesli.com/datatypes-python/">https://ravesli.com/datatypes-python/</a></li>
+                        <li><a href="https://ravesli.com/input-output-python/">https://ravesli.com/input-output-python/</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/python-output-formatting/">https://www.geeksforgeeks.org/python-output-formatting/</a></li>
+                    </ul>
+                    Other languages:
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_whereto.asp">https://www.w3schools.com/js/js_whereto.asp</a></li>
                         <li><a href="https://metanit.com/cpp/tutorial/2.3.php">https://metanit.com/cpp/tutorial/2.3.php</a></li>
                         <li><a href="https://docs.oracle.com/cd/E57471_01/bigData.100/extensions_bdd/src/cext_transform_typing.html">Dynamic typing vs. static typing - Oracle Help Center</a></li>
                         <li><a href="https://e2eml.school/images_to_numbers.html">https://e2eml.school/images_to_numbers.html</a></li>
