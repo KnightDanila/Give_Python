@@ -53,13 +53,17 @@ and open the template in the editor.
                     <br>
                     <h3>
                         Python and The Basics of Programming.
-                        <br>
-                        Branches (if, else, then, case, match)
                     </h3>
+                    Branches (
+                    if, else, then, 
+                    case, match, 
+                    ternary operation,
+                    Elvis operator
+                    )
+                    <br>   
                     <img src="../data/Python_Logo.png" alt="" class="stretch plain"/>
                     <br>
                     Lesson 2
-                    <br>
                     <br>
                     <div style="font-size: xx-large;">
                         Author: Egoshkin Danila Igorevich
@@ -68,17 +72,49 @@ and open the template in the editor.
 
                 <!--Topic N-->
                 <section>
-                    <h3>Branches (if, else, then, case, match)</h3>
+                    <h3>Branches:</h3>
+                    <ul>
+                        <li>if, else, then</li>
+                        <li>case, match</li>
+                        <li>ternary operation</li>
+                        <li>Elvis operator</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h3>What is the "If and Else" Branches?</h3>
-                    <img src="data/If_Then_Else_diagram_svg.png" alt="" style="background-color: white" class="stretch plain"/>
-                </section>
+                    <section>
+                        <h4>If and Else</h4>
+                        <img src="data/Code_IF_Else_Choice.jpg" alt="" class="stretch plain"/>
+                    </section>
 
+                    <section>
+                        <h3>What is the "If and Else" Branches?</h3>
+                        <img src="data/Code_IF_Else_Ex.webp" alt="" style="background-color: white" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>What is the "If and Else" Branches?</h3>
+                        <img src="data/Code_If_Then_Else_diagram_svg.png" alt="" style="background-color: white" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>What is the "If and Else" Branches?</h3>
+                        <img src="data/Code_IF_Else_Ex.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>What is the "If and Else" Branches?</h3>
+                        <img src="data/Code_IF_Else_Ex_Work.png" alt="" style="background-color: white" class="stretch plain"/>
+                    </section>
+
+                </section>
                 <section>
-                    <h4>If and Else</h4>
-                    <pre class="cpp" style="white-space: pre-line;" ><code>
+                    <section>
+                        <h4>If and Else - Examples</h4>
+                    </section>
+                    <section>
+                        <h4>If and Else</h4>
+                        <pre class="cpp" style="white-space: pre-line;" ><code>
                             if(condition == true)
                             {
                             
@@ -88,11 +124,15 @@ and open the template in the editor.
 
                             }
                         </code></pre>
-                </section>
+                    </section>
 
-                <section>
-                    <h4>If and Else - ex.Max</h4>
-                    <pre class="cpp"><code>
+                    <section>
+                        <img src="data/Code_IF_Else_Ex_2.png" alt=""  class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>If and Else - ex.Max</h4>
+                        <pre class="cpp"><code>
 int a, b, max;
 cout << "Enter a: "; 
 cin >> a;
@@ -108,21 +148,27 @@ else
 }
 cout << "Maximum: " << max << endl;
                         </code></pre>
+                    </section>
                 </section>
 
                 <section>
-                    <h4>Can we use If without Else?</h4>
-                    Yes!!!<br>
-                    <pre class="cpp"><code>
+                    <section>
+                        <h4>Can we use If without Else?</h4>
+                    </section>
+
+                    <section>
+                        <h4>Can we use If without Else?</h4>
+                        Yes!!!<br>
+                        <pre class="cpp"><code>
 if(condition == true)
 {
     // ToDo
 }
                         </code></pre>
-                </section>
-                <section>
-                    <h4>If without Else - ex.Number</h4>
-                    <pre class="cpp"><code>
+                    </section>
+                    <section>
+                        <h4>If without Else - ex.Number</h4>
+                        <pre class="cpp"><code>
 int number;
 cout << "Enter number [0,+inf]: ";
 cin >> number;
@@ -147,10 +193,10 @@ if(number > 100)
     cout << "and larger than 100" << endl;
 }
                         </code></pre>
-                </section>
-                <section>
-                    <h4>If without Else - ex.Max</h4>
-                    <pre class="cpp"><code>
+                    </section>
+                    <section>
+                        <h4>If without Else - ex.Max</h4>
+                        <pre class="cpp"><code>
 int a, b, max;
 cout << "Enter a: "; 
 cin >> a;
@@ -163,11 +209,12 @@ if(b > a)
 }
 cout << "Maximum: " << max << endl;
                         </code></pre>
+                    </section>
                 </section>
-
                 <section>
-                    <h4>If..Else inside If..Else</h4>
-                    <pre class="cpp"><code>
+                    <section>
+                        <h4>If..Else inside If..Else</h4>
+                        <pre class="cpp"><code>
 if() {
     if() {
     }
@@ -181,10 +228,18 @@ else {
     }
 }
                         </code></pre>
-                </section>
-                <section>
-                    <h4>If..Else inside If..Else</h4>
-                    <pre class="cpp"><code>
+                    </section>
+                    <section>
+                        <h4>If..Else inside If..Else</h4>
+                        <img src="data/Code_IF_Else_Inside_IF.webp" alt="" style="background-color: white" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>If..Else inside If..Else</h4>
+                        <img src="data/Code_IF_Else_Inside_IF_2.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>If..Else inside If..Else</h4>
+                        <pre class="cpp"><code>
 if(Rainy) {
     if(Windy) {
         if(Cold) {
@@ -199,10 +254,10 @@ if(Rainy) {
     cout << "Go for a walk" << endl;
 }
                         </code></pre>
-                </section>
-                <section>
-                    <h4>If and Else - ex.Max a == b</h4>
-                    <pre class="cpp"><code>
+                    </section>
+                    <section>
+                        <h4>If and Else - ex.Max a == b</h4>
+                        <pre class="cpp"><code>
 int a, b, max;
 cout << "Enter a: "; 
 cin >> a;
@@ -223,12 +278,17 @@ else {
 }
 cout << "Maximum: " << max << endl;
                         </code></pre>
+                    </section>
                 </section>
-
                 <section>
-                    <h4>If, Else If and Else - ex.Max a == b</h4>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+                    <section>
+                        <h4>else if - elif</h4>
+                        <img src="data/Code_Else_If_Elif.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>If, Else If and Else - ex.Max a == b</h4>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 if(condition1) {
 }
 else {
@@ -242,9 +302,9 @@ else {
     }
 }
                         </code></pre>
-                    </div>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 if(condition1) {
 }
 else if(condition2) {
@@ -255,13 +315,13 @@ else {
 }
 
                         </code></pre>  
-                    </div>
-                </section>
+                        </div>
+                    </section>
 
-                <section>
-                    <h4>If, Else If and Else - ex.Max a == b</h4>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+                    <section>
+                        <h4>If, Else If and Else - ex.Max a == b</h4>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 int a, b, max;
 cout << "Enter a: "; 
 cin >> a;
@@ -282,9 +342,9 @@ else {
 }
 cout << "Maximum: " << max << endl;
                         </code></pre>
-                    </div>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 int a, b, max;
 cout << "Enter a: "; 
 cin >> a;
@@ -304,12 +364,19 @@ else {
 
 cout << "Maximum: " << max << endl;
                         </code></pre>
-                    </div>
+                        </div>
+                    </section>
                 </section>
                 <section>
-                    <h4>Switch..Case - Match</h4>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+
+                    <section>
+                        <h4>Switch...Case - Match...Case</h4>
+                        <img src="data/Code_Switch_Case.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Switch...Case - Match...Case</h4>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 if(color == COLOR_GREEN) {
     cout << "Go, go, go... But don`t RUN" << endl;
 }
@@ -327,9 +394,9 @@ else {
     }
 }
                         </code></pre>
-                    </div>
-                    <div style="float:left; width: 48%; margin-right: 10px">
-                        <pre class="cpp"><code>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            <pre class="cpp"><code>
 enum Colors {
 	COLOR_GREEN,
 	COLOR_YELLOW,
@@ -353,15 +420,219 @@ switch (color)
 }
 
                         </code></pre>  
-                    </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Switch...Case - Match...Case</h4>
+                        <img src="data/Code_Switch_Case_2.jpeg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Switch...Case - Match...Case</h4>
+                        Only in python
+
+                        <pre class="cpp"><code>
+
+match (object):
+    case objectCase1 | objectCase2 | objectCase3:
+        ...
+    case _:
+        ...
+                        </code></pre>  
+
+                        <!--                        
+                        def go(direction):
+                            match direction:
+                                case "North" | "East" | "South" | "West":
+                                    return "Alright, I'm going!"
+                                case _:
+                                    return "I can't go that way..."
+                        
+                        print(go("North"))      # Alright, I'm going!
+                        print(go("Some where"))    # I can't go that way...-->
+
+                    </section>
+                    <section>
+
+                        <h4>Switch...Case - Match...Case</h4>
+                        Only in python (Structural pattern matching is coming in Python 3.10)
+
+                        <img src="data/Code_Switch_Case_3.webp" alt="" class="stretch plain"/>
+                        <!--
+                        
+
+                        
+                        def isAlphaColour(colour):
+                            """return true if colour has Alpha channel."""
+                        
+                            isAlpha = null;
+                            match colour:
+                                case (r, g, b):
+                                    print(colour, "has no alpha channel")
+                                    isAlpha = false
+                                case (r, g, b, a):
+                                    print(colour, "has alpha channel", a)
+                                    isAlpha = true
+                                case _:
+                                    raise ValueError("Unknown colour type.")
+                            return isAlpha
+                        
+                        # Prints ('', (240, 248, 255, 0))
+                        print(isAlphaColour((240, 248, 255)))
+                        # Prints ('', (240, 248, 255, 0))
+                        print(isAlphaColour((240, 248, 255, 0)))
+                        # Prints ('AliceBlue', (240, 248, 255, 0))
+                        print(isAlphaColour(("AliceBlue", (240, 248, 255))))
+                        # Prints ('AliceBlue', (240, 248, 255, 0.3))
+                        print(isAlphaColour(("AliceBlue", (240, 248, 255, 0.3))))
+                        
+                        
+                        
+                        describe_point(x, y):
+                            """Write a human-readable description of the point position."""
+                        
+                            match point:
+                                case Point2D(x=0, y=0):
+                                    desc = "at the origin"
+                                case Point2D(x=0, y=y):
+                                    desc = f"in the vertical axis, at y = {y}"
+                                case Point2D(x=x, y=0):
+                                    desc = f"in the horizontal axis, at x = {x}"
+                                case Point2D(x=x, y=y) if x == y:
+                                    desc = f"along the x = y line, with x = y = {x}"
+                                case Point2D(x=x, y=y) if x == -y:
+                                    desc = f"along the x = -y line, with x = {x} and y = {y}"
+                                case Point2D(x=x, y=y):
+                                    desc = f"at {point}"
+                        
+                            return "The point is " + desc
+                        -->
+
+
+                    </section>
                 </section>
                 <section>
+                    <section>
+                        Ternary operation ???
+                        <img src="data/Sherlock_think_thinking_output_HD.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Ternary operation</h4>
+                        <br>
+                        Crown of thorns - Терновий вінець
+                        <br>
+                        <img src="data/Thorns.jpg" alt="" class="stretch plain"/>
+                        <br>
+                        <a href="https://en.wikipedia.org/wiki/Prunus_spinosa">https://en.wikipedia.org/wiki/Prunus_spinosa</a>
+                    </section>
+                    <section>
+                        <h4>Ternary operation in C++ and other</h4>
+                        <img src="data/Ternary_operation_.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Ternary operation in Python and other</h4>
+                        <img src="data/Ternary_operation_Python.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Ternary operation</h4>
+                        <img src="data/Ternary_operation_ternary_operator_in_c.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Ternary operation</h4>
+                        <img src="data/Ternary_operation_ternary_operator_in_c_2.webp" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Ternary operation</h4>
+                        <br>looks lambda...
+                        <br>x -> M
+                        <br>f(x) -> M
+                        <br>but: (M is an expression that uses x)
+                        <a href="https://en.wikipedia.org/wiki/Lambda_calculus">https://en.wikipedia.org/wiki/Lambda_calculus</a>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h4>Elvis operator</h4>
+
+                        <img src="data/Elvis_operator.png" alt="" class="stretch plain"/>
+
+                        <a href=" https://en.wikipedia.org/wiki/Elvis_operator">https://en.wikipedia.org/wiki/Elvis_operator</a>
+                    </section>
+                    <section>
+                        <h4>Elvis operator</h4>
+
+                        Elvis operator - aka (also known as) null coalescing operator
+
+                        <a href="https://en.wikipedia.org/wiki/Null_coalescing_operator">https://en.wikipedia.org/wiki/Null_coalescing_operator</a>
+                    </section>
+                    <section>
+
+                        <h4>In python can be made by Ternary operation</h4>
+                        <pre class="python"><code>
+now() if time is None else time
+                        </code></pre>
+
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h4>Branches usage???</h4>
+                        <img src="data/Face_WhyNot.jpg" alt="" class="stretch plain"/>
+
+                        <h3>Branches:</h3>
+                        <ul>
+                            <li>if, else, then</li>
+                            <li>case, match</li>
+                            <li>ternary operation</li>
+                            <li>Elvis operator</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>AI</h4>
+                        <img src="data/Code_AI_Fun_1.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>AI</h4>
+                        <img src="data/Code_AI_Fun_2.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    
+                    <section>
+                        <h4>Simple expert system on rules</h4>
+                        <img src="data/Joke_AI_Expert_Eng (4).jpg" alt="" class="stretch plain"/>
+                    </section>
+                    
+                    <section>
+                        <h4>Tic Tac Toe Game</h4>
+                        <img src="data/AI_Tic_Tac_Toe_Logic.webp" alt="" class="stretch plain"/>
+                    </section>
+                    
+                    <section>
+                        Other usage:
+                        <br>
+                        AI usage, filtering
+                        <br>
+                        TODO
+                    </section>
+                </section>
+
+                <section>
                     <h3>Links: </h3>
-                    <!--                    <ul>
-                                            <li><a href="https://metanit.com/cpp/tutorial/2.3.php">https://metanit.com/cpp/tutorial/2.3.php</a></li>
-                                            <li><a href="https://docs.oracle.com/cd/E57471_01/bigData.100/extensions_bdd/src/cext_transform_typing.html">Dynamic typing vs. static typing - Oracle Help Center</a></li>
-                                            <li><a href="https://e2eml.school/images_to_numbers.html">https://e2eml.school/images_to_numbers.html</a></li>
-                                        </ul>-->
+                    <ul>        
+                        <li><a href="https://ravesli.com/if-else-python/">https://ravesli.com/if-else-python/</a></li>
+                        <li><a href="https://www.w3schools.com/python/python_conditions.asp">https://www.w3schools.com/python/python_conditions.asp</a></li>
+
+                        <li><a href="https://www.geeksforgeeks.org/python-match-case-statement/">https://www.geeksforgeeks.org/python-match-case-statement/</a>></li>
+                        <li><a href="https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial">https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial</a></li>
+
+                        <li><a href="https://www.geeksforgeeks.org/ternary-operator-in-python/">https://www.geeksforgeeks.org/ternary-operator-in-python/</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Lambda_calculus">https://en.wikipedia.org/wiki/Lambda_calculus</a></li>
+
+                        <li><a href="https://en.wikipedia.org/wiki/Elvis_operator">https://en.wikipedia.org/wiki/Elvis_operator</a></li>
+
+                    </ul>
                 </section>
                 <section>
                     Thanks for your attention :)<br>
