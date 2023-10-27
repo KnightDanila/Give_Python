@@ -1,0 +1,1 @@
+print([pow3(x) for x in num_list if pow3(x) < 30])

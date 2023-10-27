@@ -87,13 +87,13 @@ and open the template in the editor.
                         <h3>Loops</h3>
                         There are three types of loops:
                         <br>
-                        while, do-while, for
+                        while, do-while, for, foreach
                         <br>
                         <br>
                         <br>
                         An some special:
                         <br>
-                        foreach, recursion 
+                        recursion 
                     </section>
                 </section>
 
@@ -138,6 +138,13 @@ int main()
     cout << "Gotta Blast!" << endl;
 }
                         </code></pre>
+                        <!--
+                        Ex
+                        
+                        i = 3;                        
+                        while i > 0:
+                        -->
+
                     </section>
                     <section> 
                         <h4>Loops: while</h4>
@@ -149,19 +156,54 @@ int main()
 int main() {
     char str[100] = "";
     cout << "Here is a Parrot, say something: ";
-    cin >> str;
+    cin.getline(str, 100);
     // strcmp = 0 - performs a case-sensitive comparison of two strings.
     // stricmp = 0 - performs a non-case-sensitive comparison of two strings.
     while (_stricmp(str, "bye") != 0 && 
            _stricmp(str, "goodbye") != 0) {
         cout << "- Parrot: " << str << endl;
         cout << "- You: ";
-        cin >> str;
+        cin.getline(str, 100);
     }
     cout << "- Parrot: Bye Bye, Goodbye!";
 }                       </code></pre>
                     </section> 
+
+                    <section>
+                        <h4>Loops: Nested loops - Nested while</h4>
+                        A nested loop means a loop statement inside another loop statement. That is why nested loops are also called “loop inside loops“.
+                        <br>
+                        Like with If..Else inside If..Else
+                        <br>
+
+                        <pre class="cpp"><code>
+while(condition1 == true) // 1D
+{
+    while(condition2 == true) // 2D
+    {
+        while(condition3 == true) // 3D
+        {
+            ... // ToDo
+        }
+    }
+}
+                        </code></pre>
+                    </section>
+
+                    <!--
+                    >>> a = ['foo', 'bar']
+                    >>> while len(a):
+                    ...     print(a.pop(0))
+                    ...     b = ['baz', 'qux']
+                    ...     while len(b):
+                    ...         print('>', b.pop(0))
+                    -->
+
+
+
                 </section>
+
+
 
                 <section>
                     <section>
@@ -190,11 +232,113 @@ while(condition == true)
                         <h3>Loops: while vs do-while</h3>
                         <img src="data/Flowchart-for-While-and-Do-While-Loop.jpg" alt="" class="stretch plain"/>
                     </section>
+
+                    <section>
+                        <h3>Loops: do-while in Python???</h3>
+                        Is there a do-while loop in Python?
+                        <img src="data/Snake_think.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Loops: break and continue (and Python`s Pass)</h3>
+
+                    </section>
+
+                    <section>
+                        <h3>Break and continue</h3>
+                        The break and continue statements in Python are used to skip parts of the current loop or break out of the loop completely.
+                    </section>
+
+                    <section>
+                        <h3>Break</h3>
+                        <img src="data/Break_c-break-statement-works.webp" alt="" class="stretch plain"/>
+                    </section>
+                    <!--   
+                    
+sites = ["myPage", "myMarket", "myStorage", "myResume", "myGit"] # 1D
+folders = ["img", "data", "index.html"] # 2D
+i = 0
+j = 0
+while i < len(sites):
+    print(sites[i])
+    i+=1
+    j = 0
+    while j < len(folders):
+        print(">", folders[j])
+        j+=1
+                    -->
+
+                    <section>
+                        <h3>Continue</h3>
+                        <img src="data/GoOn_Continue (3).gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <!--                    
+                    password = ''
+                    
+                    while True:
+                        password = input('Enter your password: ')
+                    
+                        if len(password) < 4:
+                            print('Password too short')
+                            continue
+                        else:
+                            print(f'You entered {password}')
+                            break
+                    
+                    print(password)-->
+
+                    <section>
+                        <h3>Pass</h3>
+                        The pass statement can be used to fill in code initially that could be used in the future. 
+                        It may sound silly to use the pass statement in parts of the code that would be deleted 
+                        anyway later, but it proves to be very useful in the initial 
+                        stages of development for faster development.
+                        <br>
+                        ToDo
+                    </section>
+                    <!--      
+                    Ex
+                    secret_word = "python"
+                    counter = 0
+                    
+                    while True:
+                        word = input("Enter the secret word: ").lower()
+                        counter = counter + 1
+                        if word == secret_word:
+                            break
+                        if word != secret_word and counter > 7: 
+                            break
+                    -->
+
+                    <section>
+                        <h3>while and if</h3>
+                        <img src="data/Break.webp" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>while and else</h3>
+                        <pre class="cpp"><code>
+                        while counter < 3:
+                            pass
+                        else:
+                            pass
+                        </code></pre>
+                    </section>
+                    <!--while counter < 3:
+                        print('Inside loop')
+                        counter = counter + 1
+                    else:
+                        print('Inside else')-->
                 </section>
+
+
 
                 <section>
                     <section>
                         <h3>Loops: for vs while</h3>
+
+                        <div>What is the difference?</div>
 
                         <div style="float:left; width: 48%; margin-right: 10px">
                             WHILE
@@ -213,6 +357,205 @@ while(i < 10)
 for(int i = 0; i < 10; i++) {
     std::cout << i << " ";
 }
+                        </code></pre>  
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Loops: for in Python</h3>
+                        <div>For style by range</div>
+
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR C++
+                            <pre class="cpp"><code>
+for(int i = 0; i < 10; i++) {
+    std::cout << i << " ";
+}
+                        </code></pre>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR Python
+                            <pre class="python"><code>
+for x in range(10):
+  print(x)
+                        </code></pre>  
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Loops: for in Python</h3>
+                        <div>For with start point</div>
+
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR C++
+                            <pre class="cpp"><code>
+for(int i = 5; i < 10; i++) {
+    std::cout << i << " ";
+}
+                        </code></pre>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR Python
+                            <pre class="python"><code>
+for x in range(5, 10):
+  print(x)
+                        </code></pre>  
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Loops: for in Python</h3>
+                        <div>For with user step</div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR C++
+                            <pre class="cpp"><code>
+for(int i = 0; i < 10; i+=3) {
+    std::cout << i << " ";
+}
+                        </code></pre>
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR Python
+                            <pre class="python"><code>
+for x in range(0, 10, 3):
+  print(x)
+                        </code></pre>  
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Are there new ideas?</h3>
+                        (About the difference between for and while)
+
+                        <img src="data/Movie_Matrix_morpheus_look_think_thinking.gif" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Loops: for in Python</h3>
+
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR C++
+                            <pre class="cpp"><code>
+for (int i = 1; i <= 10; i++) {
+    std::cout << i << " ";
+    i = i * 2;
+}
+                        </code></pre>
+
+                        
+<!--
+for (int i = 1; i <= 10; i = i * 2 + 1) {
+        std::cout << i << " ";
+    }
+-->
+
+
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR Python
+                            <pre class="python"><code>
+???
+                        </code></pre>  
+                        </div>
+                    </section>
+                    <section>
+                        This is not a real example<br>
+                        It is artificial example<br>
+
+
+                    </section>
+                    <section>
+                        <h3>Loops: for in Python</h3>
+
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR C++
+                            <pre class="cpp"><code>
+for(int i = 1; i <= 10; i++) {
+    if(i % 2 == 1)
+        i+=3;
+    if(names[i] == "John")
+        i+=3;
+}
+                        </code></pre>
+
+                            <!-- 
+                            for(int i = 1; i <= 10; i=i*2+1) {
+                                                        std::cout << i << " ";
+                                                        }
+                            -->
+
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR Python
+                            <pre class="python"><code>
+???
+                        </code></pre>  
+                        </div>
+                    </section>
+
+                    <section>
+                        It is imposible with for in python, only with while...
+                        <br>
+                        But...
+                    </section>
+                </section>
+
+<!--                
+                Alex Necheporenko
+                range() only integer
+-->
+                
+                <section>
+                    <section>
+                        <h3>Loops: for == foreach in Python</h3>
+
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            foreach thought for
+                            <pre class="cpp"><code>
+int main()
+{
+  int myint[] = {1, 2, 3, 4, 5};
+
+  for (int i : myint)
+  {
+    std::cout << i << '\n';
+  }
+}
+                        </code></pre>
+                            foreach thought std
+                            <pre class="cpp"><code>
+#include &lt;iostream>
+#include &lt;algorithm> // contains std::for_each
+#include &lt;vector>
+
+int main()
+{
+  std::vector&lt;int> v {1, 2, 3, 4, 5};
+
+  std::for_each(v.begin(), v.end(), [](int i)
+  {
+    std::cout << i << '\n';
+  });
+
+  std::cout << "reversed but skip 2 elements:\n";
+
+  std::for_each(v.rbegin()+2, v.rend(), [](int i)
+  {
+    std::cout << i << '\n';
+  });
+}
+                        </code></pre>
+
+                        </div>
+                        <div style="float:left; width: 48%; margin-right: 10px">
+                            FOR
+                            <pre class="cpp"><code>
+for character in "Python":
+  print(character)
+
+
+programming_languages = ["Python", "JavaScript", "Java", "C++"]
+
+# ітерація над кожним елементом всередині списку
+for language in programming_languages:
+  print(language)
 
                         </code></pre>  
                         </div>
@@ -220,10 +563,26 @@ for(int i = 0; i < 10; i++) {
                 </section>
 
                 <section>
+                    <section>
+                        Break, Pass, Continue, Enumerate
+                    </section>
+                </section>
+                <section>
                     <h3>Links: </h3>
+
+
+
                     <ul>
-                        <li><a href="https://ravesli.com/urok-67-tsikl-while/">while()</a></li>
+
+
+                        <li><a href="https://ravesli.com/while-python/">while() Python</a></li>
+                        <li><a href="https://ravesli.com/urok-67-tsikl-while/">while() С++</a></li>
+
                         <li><a href="https://ravesli.com/urok-68-tsikl-do-while/">do-while()</a></li>
+
+                        <li><a href="https://www.freecodecamp.org/news/python-do-while-loop-example/">python-do-while-loop-example/</a></li>
+
+                        <li><a href="https://ravesli.com/for-loop-python/">for(;;) Python</a></li>
                         <li><a href="https://ravesli.com/urok-69-tsikl-for/">for(;;)</a></li>
                         <li><a href="https://ravesli.com/urok-91-tsikl-foreach/">foreach C++</a></li>
                         <li><a href="https://metanit.com/sharp/tutorial/2.6.php">foreach C#</a></li>
