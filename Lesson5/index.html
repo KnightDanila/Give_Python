@@ -119,12 +119,36 @@ int main(){
    
                         </code></pre>  
                     </section>
+
                     <section>
+                        <h3>Functions in programming - Python</h3>
+                        A function - the a small block of code, that performs some operation and runs only when it is called.
+                        <pre class="cpp"><code>
+import ...
+def hello():  # function
+    # {
+    # ... function body
+    # }
+    print("hello world")
+def main():
+    hello()
+if __name__ == "__main__":
+    main()
+                        </code></pre>  
+                    </section>
+                    <section>
+                        <h3>Function in C++</h3>
                         <img src="data/Functions-in-C-(1)-768.png" alt="" class="stretch plain"/>
                     </section>
                     <section>
                         <img src="data/C-Function-Prototype-and-C-Function-Call.png" alt="" class="stretch plain"/>
                     </section>
+
+                    <section>
+                        <h3>Function in Python</h3>
+                        <img src="data/51.png" alt=""  class="stretch plain"/>
+                    </section>
+
                     <section>
                         <h3>Main() function...</h3>
                         <pre class="cpp"><code>
@@ -214,11 +238,199 @@ int main(){
                 </section>
 
                 <section>
+                    <section>
+                        <h3>Lambda functions, Recursion and Generators</h3>
+                    </section>              
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Lambda functions</h3>
+                    </section>
+
+                    <section>
+                        <h4>Lambda functions</h4>
+                        Flashback: Ternary operation???
+                        <img src="data/dog_cupcakes_Flashbacks.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Lambda functions: Ternary operation</h4>
+                        <img src="data/Ternary_operation_Python.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Lambda functions: Ternary operation</h4>
+
+                        <pre class="cpp"><code>
+#include &ltiostream> 
+
+int main(){
+    condition = true;
+    int number = condition ? 42 : 13
+}
+                        </code></pre>
+                        <pre class="python"><code>
+condition = True
+number = 42 if condition else 13
+print(number)
+                        </code></pre>
+
+                    </section>
+
+                    <section>
+                        <h4>Ternary operation</h4>
+                        <br>looks lambda...
+                        <br>x -> M
+                        <br>f(x) -> M
+                        <br>but: (M is an expression that uses x)
+                        <a href="https://en.wikipedia.org/wiki/Lambda_calculus">https://en.wikipedia.org/wiki/Lambda_calculus</a>
+                    </section>
+
+
+                    <section>
+                        <h3>Lambda functions</h3>
+                        <img src="data/lambda.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <!--
+                    power2 = lambda x: x*x
+                    print(power2(5))
+                    -->
+                    <section>
+                        <h3>Lambda functions</h3>
+                        <img src="data/Lamda-function-Python_1arg.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Lambda functions</h3>
+                        <img src="data/Lamda-function-Python_2args.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Lambda functions: Fish Tanks Volume Ex</h3>
+                        <pre class="python"><code>
+# Fish Tanks Volume 
+def calculateFishTanks():
+    # Only here we use function 5 times, so make it lambda
+    pass
+
+
+volume = lambda x, y, z, type="cm^3": "Volume: " + str(x * y * z) + " " + type
+
+print(volume(10, 15, 20))
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Lambda functions == Anonymous functions</h3>
+                        Lambda functions are similar to user-defined functions but without a name. They're commonly referred to as anonymous functions. Lambda functions are efficient whenever you want to create a function that will only contain simple expressions – that is, expressions that are usually a single line of a statement.
+                    </section>
+                    <section>
+                        <h3>Lambda functions: usage</h3>
+                        <img src="data/Lamda_function_usage.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Lambda functions: filter example</h3>
+                        <pre class="python"><code>
+data = ["rabbit", "chuck", "Joe", "duck", "rock", "joke", "docker", "hope"]
+listfilter = list(filter(lambda x: ('k' in x), data))
+
+# Prints ['chuck', 'duck', 'rock', 'joke', 'docker']
+print(listfilter)
+                        </code></pre>
+                    </section>
+
+                </section>
+
+
+                <section>
+                    <section>
+                        <h3>Recursion</h3>
+                        What do you think recursion is?
+                        <img src="data/Animal_Dog_Meme_Recursion.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        <img src="data/Music_Nickelback_Recursion_photograph_nickelback.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        <img src="data/Code_Recursion_Пасхалка, которую мы заслужили.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        <img src="data/Recursion_Mirror_inception.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        <img src="data/Game_Portal_Box_Loop_Recursion_Heart_500.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        Ask Google what recursion is
+                    </section>
+                    <section>
+                        <h4>Quiz: Where the recursion here?</h4>
+                        <img src="data/Recursion_Ackermann_function.png" alt="" class="stretch plain"/>
+                        <br>
+                        <a href="https://en.wikipedia.org/wiki/Ackermann_function">https://en.wikipedia.org/wiki/Ackermann_function</a>
+                    </section>
+
+                    <!--                    
+                    void recursionLevel(int &level) {
+                        cout << level++ << endl;
+                        recursionLevel(level);
+                    }
+                    
+                    int main() {
+                        int level = 1;
+                        recursionLevel(level);
+                    
+                        return 0;
+                    }-->
+
+                    <!--def recursionLevel(level):
+                        print(level)
+                        level+=1
+                        recursionLevel(level)
+                    
+                    print(recursionLevel(1))-->
+
+                    <section>
+                        <h4>Christopher Nolan - Inception (2010)</h4>
+                        To understand recursion better, watch this movie.
+                        <br>
+                        <img src="data/Recursion_inception-lkjhgfdsa (2).gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Portal the game</h4>
+                        To understand recursion better, play/watch this game.
+                        <br>
+                        <img src="data/HydregonArt_Portal.gif" alt="" class="stretch plain"/>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h3>Generators</h3>
+                        range()
+                    </section>
+                </section>
+
+                <section>
                     <h3>Links:</h3>
                     <ul>
+                        Python
+                        <li><a href="https://www.w3schools.com/python/python_functions.asp">https://www.w3schools.com/python/python_functions.asp</a></li>
+                        <li><a href="https://realpython.com/python-pass-by-reference/">https://realpython.com/python-pass-by-reference/</a></li>
+
+
+                        C++
                         <li><a href="https://www.geeksforgeeks.org/c-functions/">https://www.geeksforgeeks.org/c-functions/</a></li>
                         <li><a href="https://ravesli.com/urok-12-funktsii-i-return/">https://ravesli.com/urok-12-funktsii-i-return/</a></li>
                         <li><a href="https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html">https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html</a></li>
+
+                        Recursion
+                        <li><a href="https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/">https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/</a></li>
+
+
                     </ul>
                 </section>
 
