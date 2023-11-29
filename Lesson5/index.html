@@ -410,28 +410,294 @@ print(listfilter)
                 <section>
                     <section>
                         <h3>Generators</h3>
-                        range()
+                        <img src="data/gen_mass_production_meal.gif" alt="" class="stretch plain"/>
                     </section>
+
+                    <section>
+                        <h3>Quiz: What is generated here?</h3>
+                        <img src="data/gen_mass_production_Maincraft_Stoneq.jpg" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Quiz: What is generated here?</h3>
+                        <img src="data/gen_mass_production_pancakes.gif" alt="" class="stretch plain"/> 
+                    </section>
+                    <section>
+                        <h3>Quiz: What is generated here?</h3>
+                        <img src="data/gen_mass_production_pte-mass.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Quiz: What is generated here?</h3>
+                        <img src="data/gen_mass_production_car_slide-6.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>What you can say about generators?</h3>
+                        <img src="data/gen_mass_production_robots.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Generators vs Iterators</h3>
+                        <img src="data/Gen_Iterator_mini-3x.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Generators vs Iterators</h3>
+                        <img src="data/Gen_Iiterator_en-3x.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h3>Generators vs Iterators</h3>
+                        <img src="data/Gen_Iterator_1513840561502.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Why we cannot use [index]</h3>
+                        <img src="data/Hobbit_What_WTF.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Why we cannot use [index]</h3>
+                        <pre class="cpp"><code>
+int* a = new int[10]{1,2,3,4,5,6,7,8,9,10};
+a+sizeof(int)*index
+                        </code></pre>
+                        <img src="data/What_eyes_vk_com_onlinegamer.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>It is like in FOR</h3>
+                        <!-- Most likely we go through all the elements-->
+
+                        <img src="data/Dead Or Alive - You Spin Me Round.gif" alt="" class="stretch plain"/>
+                        <br>
+                        Dead Or Alive - You Spin Me Round
+                    </section>
+
+
+
+                    <section>
+                        <h3>Generators vs Iterators</h3>
+                        <pre class="python"><code>
+# list comprehension
+doublesGen = (2 * n for n in range(50))
+
+# same as the list comprehension above
+doublesList = list(2 * n for n in range(50)) # 0 - 49
+                        </code></pre>
+                    </section>
+
+                    <!--
+                        doublesGen = {2 * n : n+1 for n in range(50)}
+                    -->
+
+                    <section>
+                        <h3>Generators</h3>
+                        <img src="data/gen_list_comprehension_1024x493.png" alt="" class="stretch plain"/>
+                    </section>
+
+
+                    <section>
+                        <h3>Generators</h3>
+                        range() & next()
+                        <br>
+                        import sys
+                        <br>
+                        sys.getsizeof([])
+                    </section>
+
+
+
+
+                    <section>
+                        <h3>Generators Task</h3> 
+                        <!--     Gauss           -->
+                        1+2+3+4+5+...+95+96+97+98+99+100
+                    </section>
+
+                    <section>
+                        <h3>Generators Task</h3> 
+                        <!--     Gauss           -->
+                        <img src="data/gen_Gauss_1.jpg" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--     Gauss           -->
+                        <img src="data/gen_Gauss_2.jpg" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--                        Gauss           -->
+                        <pre class="python"><code>
+def first_n(n):
+    '''Build and return a list'''
+    num, nums = 0, []
+    while num <= n:
+        nums.append(num)
+        num += 1
+    return nums
+
+
+sum_of_first_n = sum(first_n(100))
+print(sum_of_first_n)
+                        </code></pre>
+                    </section>
+
+
+
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--                        Gauss           -->
+                        <pre class="python"><code>
+num, nums = 0, []
+nums.append(num)
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--                        Gauss           -->
+                        <pre class="python"><code>
+yield
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--                        Gauss           -->
+                        yield ~ return
+                    </section>
+
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        yield
+                        <pre class="python"><code>
+def simpleGeneratorFun(): 
+    yield 1            
+    yield 2            
+    yield 3  
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        yield
+                        <pre class="python"><code>
+
+# Python Generator Function with Multiple Yield
+
+def testGen():
+    x = 1
+    print('First yield')
+    # Generator function has many yield statements
+    yield x
+
+    x *= 2
+    print('Second yield')
+    yield x
+
+    x *= 3
+    print('Last yield')
+    yield x
+
+# Call the generator
+iter = testGen()
+
+# Invoke the first yield
+next(iter)
+
+# Invoke the second yield
+next(iter)
+
+# Invoke the last yield
+next(iter)
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Generators Task Gauss</h3> 
+                        <!--                        Gauss           -->
+                        <pre class="python"><code>
+# a generator that yields items instead of returning a list
+def firstn(n):
+    num = 0
+    while num <= n:
+        yield num
+        num += 1
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        Jack Black Magic in `yield`
+
+                        <img src="data/JackBlack_Book_Magic_Wow.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        yield
+                        <pre class="python"><code>
+def csv_reader(file_name):
+    for row in open(file_name, "r"):
+        yield row
+                        </code></pre>
+                    </section>  
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        yield infinity generator :D
+                        <pre class="python"><code>
+def infinite_sequence():
+    num = 0
+    while True:
+        yield num
+        num += 1
+                        </code></pre>
+                    </section>    
+
+                    <section>
+                        <h3>Generators: yield</h3> 
+                        yield infinity generator :D
+                        <br>
+                        <img src="data/gen_yield_working.png" alt="" class="stretch plain"/>
+                    </section>       
+
+                    <section>
+                        <h3>Generators in Math</h3>
+                        Recursive sequence with saved precalulated values - saved last step.
+                    </section>
+
+                    <section>
+                        <h3>Generators</h3>
+                        <img src="data/gen_mass_production_1682146643594.gif" alt="" class="stretch plain"/>
+                    </section>
+
                 </section>
+
+
 
                 <section>
                     <h3>Links:</h3>
-                    <ul>
-                        Python
-                        <li><a href="https://www.w3schools.com/python/python_functions.asp">https://www.w3schools.com/python/python_functions.asp</a></li>
-                        <li><a href="https://realpython.com/python-pass-by-reference/">https://realpython.com/python-pass-by-reference/</a></li>
+                    <div style="font-size: x-large">
+                        <ul>
+                            Python
+                            <li><a href="https://www.w3schools.com/python/python_functions.asp">https://www.w3schools.com/python/python_functions.asp</a></li>
+                            <li><a href="https://realpython.com/python-pass-by-reference/">https://realpython.com/python-pass-by-reference/</a></li>
 
+                            C++
+                            <li><a href="https://www.geeksforgeeks.org/c-functions/">https://www.geeksforgeeks.org/c-functions/</a></li>
+                            <li><a href="https://ravesli.com/urok-12-funktsii-i-return/">https://ravesli.com/urok-12-funktsii-i-return/</a></li>
+                            <li><a href="https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html">https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html</a></li>
 
-                        C++
-                        <li><a href="https://www.geeksforgeeks.org/c-functions/">https://www.geeksforgeeks.org/c-functions/</a></li>
-                        <li><a href="https://ravesli.com/urok-12-funktsii-i-return/">https://ravesli.com/urok-12-funktsii-i-return/</a></li>
-                        <li><a href="https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html">https://runestone.academy/ns/books/published/fopp/SimplePythonData/FunctionCalls.html</a></li>
+                            Recursion
+                            <li><a href="https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/">https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/</a></li>
 
-                        Recursion
-                        <li><a href="https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/">https://www.freecodecamp.org/news/recursion-demystified-99a2105cb871/</a></li>
-
-
-                    </ul>
+                            Generators:
+                            <li><a href="https://www.geeksforgeeks.org/generators-in-python/">https://www.geeksforgeeks.org/generators-in-python/</a></li>
+                            <li><a href="https://habr.com/ru/articles/132554/">https://habr.com/ru/articles/132554/</a></li>
+                            <li><a href="https://www.techbeamers.com/python-generator/">https://www.techbeamers.com/python-generator/</a></li>
+                            <li><a href="https://wiki.python.org/moin/Generators">https://wiki.python.org/moin/Generators</a></li>
+                            <li><a href="https://geekpython.in/python-generators-with-yield-statement">https://geekpython.in/python-generators-with-yield-statement</a></li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section>
