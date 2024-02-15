@@ -1,6 +1,28 @@
-https://ubuntu.com/download/alternative-downloads
+Labs 1
 
-SMB servers
-xrdp
-RustDesk
+Hello world
+
+Parrot
+Find letter position in text
+
+
+
+Menu
+
+
+pygame
+https://pythonprogramming.net/displaying-images-pygame/
+iAnimal -> Dog, Cat, ... // iBird, iFish
+iVehicle -> Bus, Car
+iBlock -> Diamond, Obsidian, Coal Ore, Water
+iPhone -> Nokia 3310, 
+	  Operator
+iCreaturePopulation -> Few, Several, Pack, Lots, ...
+iSpaceship -> 
+(iSpell-iCharm-iMagic)
+iSpell -> Lumos, Alohomora
+iCounty -> Ukraine, England, Deutch, ...
+NEW
+Chemical elements
+
 
