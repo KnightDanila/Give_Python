@@ -257,18 +257,21 @@ and open the template in the editor.
                         C++
                         <pre class="cpp" style="white-space: pre-line;">
                         <code>std::cout << "Enter something: ";
-                            //...
-                            char input[100];
-                            cin >> input;
-                            cout << input << end;
-                            //
-                            char input[100];
-                            cin.getline(input,sizeof(input));
-                            cout << input << end;
-                            //
-                            std::string input;
-                            std::getline(std::cin, input);
-                            cout << input << end;
+                            /**/
+                            char input1[100];
+                            cin >> input1;
+                            cout << input1 << endl;
+                            /**/
+                            /**/
+                            char input2[100];
+                            cin.getline(input2, sizeof(input2));
+                            cout << input2 << endl;
+                            /**/
+                            /**/
+                            string input3;
+                            std::getline(std::cin, input3);
+                            cout << input3 << endl;
+                            /**/
                         </code></pre>
 
                     </section>
