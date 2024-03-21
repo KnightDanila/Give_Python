@@ -210,6 +210,38 @@ if(b > a)
 cout << "Maximum: " << max << endl;
                         </code></pre>
                     </section>
+                    <section>
+                        <h4>If without Else - ex.Max</h4>
+                        Is it looks good?
+                        <pre class="cpp"><code>
+void encoder(char *text, int text_len){
+    for (int i = 0; i < text_len; i++) {
+        char letter = text[i];
+        char part1 = (letter & 0xf0) >> 4;
+        char part2 = letter & 0xf;
+        char part1_1 = (part1 >> 3) << 2;
+        char part1_2 = ((part1 >> 2) & 0x1) << 3;
+        char part1_3 = ((part1 >> 1) & 0x1);
+        char part1_4 = (part1 & 0x1) << 1;
+        part1 = part1_1 | part1_2 | part1_3 | part1_4;
+        part2 = part1 ^ part2;
+        text[i] = (part1 << 4) | part2;
+    }
+}
+
+bool encodeString(char *text, int text_len) {
+
+    // What is wrong with encodeString function
+
+    if (text != NULL) {
+        encoder(text, text_len);
+        cout << "Encrypted: " << text << endl;
+    }
+ 
+    return true;
+}
+                        </code></pre>
+                    </section>
                 </section>
                 <section>
                     <section>
@@ -448,8 +480,23 @@ match (object):
                                     return "I can't go that way..."
                         
                         print(go("North"))      # Alright, I'm going!
-                        print(go("Some where"))    # I can't go that way...-->
+                        print(go("Some where"))    # I can't go that way...
 
+                        # HARD CORE VERSION
+                        def go(direction):
+                            match direction:
+                                case "North" | "East" | "South" | "West" as d:
+                                    return f"Alright, I am going: {d}"
+                                case x:
+                                    return f"I can`t go there: {x}"
+                        # CRAZY CORE VERSION
+                        def go(direction):
+                            match direction:
+                                case "North" | "East" | "South" | "West" as d,steps if steps > 3:
+                                    return f"Alright, I am going: {d} Steps: {steps}"
+                                case x:
+                                    return f"I can`t go there: {x}"
+                        -->
                     </section>
                     <section>
 
@@ -509,7 +556,14 @@ match (object):
 
 
                     </section>
+                    <section>
+                        <img src="data/Code_Switch_Case_4_Mr_Hack.jpg" alt=""  class="stretch plain"/>
+                    </section>
+                    <section>
+                        <img src="data/Code_Switch_Case_5_Mr_Hack.jpg" alt=""  class="stretch plain"/>
+                    </section>
                 </section>
+
                 <section>
                     <section>
                         Ternary operation ???
@@ -598,17 +652,17 @@ now() if time is None else time
                         <h4>AI</h4>
                         <img src="data/Code_AI_Fun_2.jpg" alt="" class="stretch plain"/>
                     </section>
-                    
+
                     <section>
                         <h4>Simple expert system on rules</h4>
                         <img src="data/Joke_AI_Expert_Eng (4).jpg" alt="" class="stretch plain"/>
                     </section>
-                    
+
                     <section>
                         <h4>Tic Tac Toe Game</h4>
                         <img src="data/AI_Tic_Tac_Toe_Logic.webp" alt="" class="stretch plain"/>
                     </section>
-                    
+
                     <section>
                         Other usage:
                         <br>
