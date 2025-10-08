@@ -7,3 +7,6 @@ print(capital_city)
 print(capital_city['Ukraine'])
 print(capital_city[variable])
 print(id(variable))
+
+
+https://www.reddit.com/r/Arcade1Up/comments/1j284rh/games_not_saving_high_scores_i_just_picked_up_the/
