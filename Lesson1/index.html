@@ -371,8 +371,12 @@ and open the template in the editor.
                             print('{1} and {0}'.format(text1, text2)) # C#
                             print(f 'Some text: {text1} {text2}') # Shell
                             
-                            print("Decimal(int) : %2d, Portal : %5.2f" % (1, 05.333)) # C printf("%X", ...);
-                            print("Total students : %3d, Boys : %2d, Girls : %2d" % (240, 120, 120))   # print integer value
+                            print(f"{text1:^10}")
+                            print(f"{text1:<10}")
+                            print(f"{text1:>10}")
+                            
+                            print("Decimal(int) : %2d, Portal : %5.2f" % (1, 05.333)) # C printf("%X", ...); 2 and 5 offsets xx, xxxxx
+                            print("Total students : %3d, Boys : %2d, Girls : %2d" % (240, 120, 120))   # print integer value with 3, 2, 2 offset
                             print("%7.3o" % (25))   # print octal value
                             print("%10.3E" % (356.08977))   # print exponential value
                         </code></pre>
